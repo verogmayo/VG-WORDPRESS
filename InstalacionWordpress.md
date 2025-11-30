@@ -1,4 +1,4 @@
-[volver al menú principal](README.md)
+[volver al menú principal](README.md)  
 [ir a Estructura de Carpetas](EstructuraDeCarpetas.md)
 
 # Instalación Wordpress.org en un servidor Ubuntu 24.04

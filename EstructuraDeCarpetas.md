@@ -1,4 +1,4 @@
-[volver al menú principal](README.md)
+[volver al menú principal](README.md)  
 [ir a Instalación de Wordpress](InstalacionWordpress.md)
 
 # Estructura de Carpetas y Archivos de WordPress
@@ -170,9 +170,10 @@ Se ubican en la carpeta wp-content
 │
 ├── WordPress
 │   └── /var/www/html/wordpress/wp-content/debug.log
-│       └── Errores de PHP/WordPress
+│       
 
 ```
+![Fichero de Logs](images/debugLog.png)
 
 ### Activar logs en WordPress
 
