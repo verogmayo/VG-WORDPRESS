@@ -86,7 +86,7 @@ He dejado el que venía por defecto pero se puede cambiar.
 **Contenido:**
 El contenido del archivo .htaccess se va generando dinamicamente y aparece esto en el de mi proyecto.  
 
-![alt text](images/archivoHtaccess.png)
+![alt text](images/archivoHtaccess.png)  
 Si hubiera algún problema con este archivo se puede buscar [aquí](https://developer.wordpress.org/advanced-administration/server/web-server/httpd/) el contenido típico según la version
 
 Este es el contenido Básico.
