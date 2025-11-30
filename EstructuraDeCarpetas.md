@@ -1,3 +1,6 @@
+[volver al menú principal](README.md)
+[ir a Instalación de Wordpress](InstalacionWordpress.md)
+
 # Estructura de Carpetas y Archivos de WordPress
 
 ## Índice
