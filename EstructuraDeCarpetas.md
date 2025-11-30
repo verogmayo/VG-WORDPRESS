@@ -150,9 +150,9 @@ plugins/
 
 ```
 
-### uploads/
+### uploads/  
 
-Todos los archivos multimedia subidos (imágenes, PDFs, etc.)
+Todos los archivos multimedia subidos (imágenes, PDFs, etc.)  
 ![uploads](images/uploads.png)  
 
 **Importante:** Esta carpeta necesita permisos de escritura para www-data
@@ -198,7 +198,7 @@ define('WP_DEBUG_DISPLAY', false);
 ?>
 ```  
 ![alt text](/images/DebugDesarrollo.png)  
-Fuente: (https://raiolanetworks.com/blog/como-activar-modo-debug-wordpress/?gad_source=1&gad_campaignid=23288141502&gbraid=0AAAAAC_ZO-58qJYQz_TSDlusI6bHIKfyN&gclid=CjwKCAiA86_JBhAIEiwA4i9JuxKW6PYYCPY7zeUNfOB8HwCPrsONPm5HEjirVFQZ9V1w6Bpo8P36exoC0tEQAvD_BwE)
+Fuente: (https://raiolanetworks.com/blog/como-activar-modo-debug-wordpress/)
 
 
 
