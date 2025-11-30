@@ -28,10 +28,15 @@ sudo mv wordpress /var/www/html/
 
 
 ## Creacion de la base de datos
+  * Se abre mariadb.
+```sql
+sudo mariadb;
+```
+
   * Se crea la base de datos en el servidor
 ```sql
 CREATE DATABASE wordpress_db;
-CREATE USER 'wpuser'@'192.168.0.22' IDENTIFIED BY 'paso'
+CREATE USER 'wpuser'@'192.168.0.22' IDENTIFIED BY 'paso';
 GRANT ALL PRIVILEGES ON wordpress_db.* TO 'wpuser'@'192.168.0.22';
 FLUSH PRIVILEGES;
 EXIT;
@@ -41,12 +46,17 @@ EXIT;
 Se configuran los permisos para la carpeta wordpress
 ```bash
 sudo chown -R www-data:www-data /var/www/html/wordpress
-sudo chmod -R 755 /var/www/html/wordpress
+sudo chmod -R 775 /var/www/html/wordpress
 ```
 
 
 ## Configurar apache para wordpress
-* Se entra en el fichero de configuración de wordpress en Apache
+* Se hace una copia de archivo 000-default.conf. 
+
+```bash
+sudo cp 000-default.conf wordpress.conf
+```
+* Se entra en el fichero de configuración de wordpress en Apache.
 ```bash
 sudo nano /etc/apache2/sites-available/wordpress.conf
 ```
