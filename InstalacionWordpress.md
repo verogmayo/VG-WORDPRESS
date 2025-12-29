@@ -3,6 +3,12 @@
 
 # Instalación Wordpress.org en un servidor Ubuntu 24.04
 
+- [Instalación Wordpress.org en un servidor Ubuntu 24.04](#instalación-wordpressorg-en-un-servidor-ubuntu-2404)
+  - [Descarga e instalacion en un servidor propio.](#descarga-e-instalacion-en-un-servidor-propio)
+  - [Creación de la base de datos](#creación-de-la-base-de-datos)
+  - [Configuración de los permisos](#configuración-de-los-permisos)
+  - [Configuración de apache para wordpress](#configuración-de-apache-para-wordpress)
+  - [Configuración de Wordpress](#configuración-de-wordpress)
 
 ## Descarga e instalacion en un servidor propio.
 Para ello se recomienda tener instalado en el servidor:
@@ -28,7 +34,7 @@ sudo mv wordpress /var/www/html/
 ```
 
 
-## Creacion de la base de datos
+## Creación de la base de datos
   * Se abre mariadb.
 ```sql
 sudo mariadb;
@@ -43,7 +49,7 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
-## Configurar permisos 
+## Configuración de los permisos 
 Se configuran los permisos para la carpeta wordpress
 ```bash
 sudo chown -R www-data:www-data /var/www/html/wordpress
@@ -51,9 +57,11 @@ sudo chmod -R 775 /var/www/html/wordpress
 ```
 
 
-## Configurar apache para wordpress
-* Se hace una copia de archivo 000-default.conf. 
-
+## Configuración de apache para wordpress
+* Se hace una copia de archivo 000-default.conf en la carpeta /etc/apache2/sites-available/. 
+```bash
+cd /etc/apache2/sites-available/
+```
 ```bash
 sudo cp 000-default.conf wordpress.conf
 ```
@@ -80,7 +88,7 @@ sudo a2enmod rewrite
 sudo systemctl restart apache2
 ```
 
-## Se configura Wordpress
+## Configuración de Wordpress
 * Abrir en el navegador : http://192.168.0.22/wordpress/
 y seguir los pasos...
 
