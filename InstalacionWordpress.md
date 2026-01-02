@@ -1,5 +1,8 @@
 [volver al menú principal](README.md)  
 [ir a Estructura de Carpetas](EstructuraDeCarpetas.md)
+[ir a Guía de paso a Plesk](GuiaPasoAPlesk.md)
+[ir a Uso de Wordpress](usoWordPress.md)
+
 
 # Instalación Wordpress.org en un servidor Ubuntu 24.04
 

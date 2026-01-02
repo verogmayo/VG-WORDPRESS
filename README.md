@@ -1,5 +1,5 @@
 <div style="text-align: center;">
-  <img src="images/logoWP.png" alt="Logo WordPress">
+  <img src="images/wordpress2.jpg" alt="Logo WordPress">
   <h1>ESTUDIO DE WORDPRESS</h1>
 </div>
   <div>
@@ -10,3 +10,6 @@
             <li><a href="GuiaPasoAPlesk.md">GUÍA DE PASO A PLESK</a></li>
         </ul>
     </div>
+
+## Objetivo de estas Guías
+El propósito de estos documentos es informar sobre la instalación y uso de wordpress para desarrollar proyectos con este CMS.

@@ -1,3 +1,10 @@
+[volver al menú principal](README.md)  
+[ir a Instalación de Wordpress](InstalacionWordpress.md)
+[ir a Estructura de Carpetas](EstructuraDeCarpetas.md)
+[ir a Uso de Wordpress](usoWordPress.md)
+
+
+
 # Guía de Migración de WordPress a Plesk y copia de seguridad.
 
 Este documento presenta tres métodos para subir el proyecto desde el entorno de desarrollo al servidor de producción o para hacer una copia de seguridad.
