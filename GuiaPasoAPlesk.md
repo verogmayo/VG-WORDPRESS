@@ -1,7 +1,7 @@
 [volver al menú principal](README.md)  
-[ir a Instalación de Wordpress](InstalacionWordpress.md)
-[ir a Estructura de Carpetas](EstructuraDeCarpetas.md)
-[ir a Uso de Wordpress](usoWordPress.md)
+[ir a Instalación de Wordpress](InstalacionWordpress.md)  
+[ir a Estructura de Carpetas](EstructuraDeCarpetas.md)  
+[ir a Uso de Wordpress](usoWordPress.md)  
 
 
 

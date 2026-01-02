@@ -1,7 +1,7 @@
 [volver al menú principal](README.md)  
-[ir a Instalación de Wordpress](InstalacionWordpress.md)
-[ir a Estructura de Carpetas](EstructuraDeCarpetas.md)
-[ir a Guía de paso a Plesk](GuiaPasoAPlesk.md)
+[ir a Instalación de Wordpress](InstalacionWordpress.md)  
+[ir a Estructura de Carpetas](EstructuraDeCarpetas.md)  
+[ir a Guía de paso a Plesk](GuiaPasoAPlesk.md)  
 
 
 # USO DE WORDPRESS
