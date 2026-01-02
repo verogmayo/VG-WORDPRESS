@@ -1,5 +1,7 @@
 [volver al menú principal](README.md)  
-[ir a Instalación de Wordpress](InstalacionWordpress.md)
+[ir a Instalación de Wordpress](InstalacionWordpress.md)  
+[ir a Guía de paso a Plesk](GuiaPasoAPlesk.md)  
+[ir a Uso de Wordpress](usoWordPress.md)  
 
 # Estructura de Carpetas y Archivos de WordPress
 
