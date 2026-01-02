@@ -9,6 +9,7 @@
   - [6 - CREAR UNA TABLA PARA LOS CORREOS DE USUARIOS DE LA NEWSLETTER.](#6---crear-una-tabla-para-los-correos-de-usuarios-de-la-newsletter)
   - [7 - PERSONALIZAR LOS COMENTARIOS.](#7---personalizar-los-comentarios)
   - [8 - AÑADIR UN CALENDARIO DE EVENTOS](#8---añadir-un-calendario-de-eventos)
+  - [9 - PLUGIN PARA FACILITAR EL ENVÍO DE CORREOS ELECTRÓNICOS](#9---plugin-para-facilitar-el-envío-de-correos-electrónicos)
 
 ## 1-ELECCIÓN DEL TEMA DE LA PÁGINA
 * En el panel de administración se va a Apariencia-Panel  
@@ -58,7 +59,7 @@ y para terminar se podrán elegir algunos plugins. Algunos ya vienen señalados 
 * En el menú general de la iquierda se va a Apariencia- Personalizar.
 
 Y en el menu de la izquierda de Personalizar se encuentran todas las secciones que se pueden personalizar.
-![Menú personalizar](images/wp4-MenuPersonalizar.png)  
+![Menú personalizar](images/wp4-MenuPersonalizar.png)   
 * En el menu de la derecha se puede indicar que aparezcan el formulario de comantarios. Si no hay formulario personalizado aparecerá el fomulario del tema en las entradas, justo encima del pie de página.
 * Para que solo sean los usuarios registrados los puedan añadir comentarios. Ajustes-Comentarios
 ![Comentarios](images/comentariosRegistrados.png)
@@ -97,7 +98,7 @@ El tema gratis de Kadence no permite almacenar los mails de los suscriptores per
 
 * Se instalan y se activan estos plugins
 ![alt text](images/wp6-PluginDatabaseForm1.png)
-![alt text](images/wp6-PluginDatabaseForm2.png)
+![alt text](images/wp6-PluginDatabaseForm2.png)  
 se encuentra la guia en inglés aqui: https://wpforms.com/docs/creating-first-form/?utm_campaign=liteplugin&utm_source=WordPress&utm_medium=welcome-page&utm_content=Read%20the%20Full%20Guide&utm_locale=es_ES  
 
 * Se crea el fomulario con el plugin. 
@@ -110,8 +111,8 @@ se encuentra la guia en inglés aqui: https://wpforms.com/docs/creating-first-fo
 y al hacer clic en el campo del formulario se abre el menu de personalizacion del campo.  
 ![alt text](images/wp6-PersonalizacionCampo.png)  
 
-* Para ver la tabla de los usuarios suscritos a la newsletter se accede a WPForms DB y aparece la lista de los formularios, se elige el que se quiera ver
-* ![alt text](images/wp6-TablaSuscripcionNewsletter.png)
+* Para ver la tabla de los usuarios suscritos a la newsletter se accede a WPForms DB y aparece la lista de los formularios, se elige el que se quiera ver  
+* ![alt text](images/wp6-TablaSuscripcionNewsletter.png)  
 y aparece la tabla con la lista de los usuarios suscritos
 ![alt text](images/wp6-TablaSuscripciónNewsletter2.png)
 
@@ -141,12 +142,31 @@ En esa sección hay un enlace de ayuda a como configurar una fecha en PHP con da
 
 * Para que los usuarios se puedan inscribir a los eventos y poder tener un control sobre los asistentes a los encuentros, se puede instalar el plugin de event Tickets que sugiere el plugin The event calendar.
 **Esta parte solo se podrá hacer cuando el proyecto esté subido a explotación. Desde el servidor local no se puede conectar a la API Rest y no permite añadir esa funcionalidad**
-En Tickets-Ajustes-Pagos se activa Tickets Commerce
-![alt text](images/wp8-ActivarTicketCommerce.png)
-A partir de ahora al crear el evento aparecerá el añadir una entrada y RSVP (confirmar asistencia)
+En Tickets-Ajustes-Pagos se activa Tickets Commerce  
+![alt text](images/wp8-ActivarTicketCommerce.png)  
+A partir de ahora al crear el evento aparecerá el añadir una entrada y RSVP (confirmar asistencia)  
 ![alt text](images/wp8-TicketConfimarAsistencia.png)
-Ticket
+Ticket  
 ![alt text](images/wp8-TicketEncuentro.png)
 Confirmación Asistencia
 ![alt text](images/ConfirmaciónAsistencia)
 
+## 9 - PLUGIN PARA FACILITAR EL ENVÍO DE CORREOS ELECTRÓNICOS
+* Para que pueda funcionar bien el envío de mails desde la pagina de wordpress se necesita un sercicio de SMTP (Simple Mail Transfer Protocol (Protocolo simple de transferencia de correo)). Esto permite enviar los correos electrónicos del sitio a través de un servidor de correo electrónico dedicado. Esto significa que el sitio puede enviar correos electrónicos de manera más confiable y es menos probable que esos correos terminen en las carpetas de spam de los usuarios.
+* Para ello, vamos a utilizar el plugin WP Mail SMTP que es uno de los más utiizados.
+![alt text](images/wp9-PluginWPMailSmtp.png)
+Hay que elegir un servicio smtp, he elegido Brevo porque dentro de los que son gratis, tiene mayor capacidad de recepción de correos.
+![alt text](images/wp9-ConfiguracionWPMailSmtp.png)
+Hay que crear una cuenta en Brevo 
+En el caso de que no se reciba el sms para confimrar el numero de telefono, se puede enviar un mail a los administradores de Brevo y en el plazo de 24-48h dan solución al problema. Hasta que no se configure del todo la cuenta, no se puede utilizar la clave API para el protocolo de correo.
+Si no se hace nada, solo se enviarán los correos de educa.
+![alt text](images/wp9-ConfiguracionWPMailSmtp2.png)  
+![alt text](images/wp9-ConfiguracionWPMailSmtp3.png)  
+![alt text](images/wp9-ConfiguracionWPMailSmtp4.png)  
+En ese momento se recibe un mail con el enlace con la configuración y desde ahi se genera la clave Api SMTP
+Se genera la Api, se copia
+![alt text](images/wp9-ConfiguracionWPMailSmtp5.png)  
+Y se pega en wordpress, en WP Mail SMTP-Ajustes y en la parte de abajo está la sección donde hay que pegar la clave
+![alt text](images/wp9-ConfiguracionWPMailSmtp6.png)  
+
+	
