@@ -86,3 +86,34 @@ WHERE option_name = 'home';
 
 
 ---
+
+## Copia de seguridad Manual en Plesk
+1. **Crear copia de seguridad:**  
+  a. **Copia de los archivos**
+   - Se entra en la carpeta del proyecto Wordpress en Plesk.  
+   - Se selecciona todas las carpetas que se quiera respaldar(en mi caso todas)  
+![alt text](images/sm-SeleccionarTodo.png)  
+   - Se comprimen los archivos.  
+   - En el menu de la carpeta, se va a `Archivo > Añadir a archivo comprimido`  
+![alt text](images/sm-ComprimirArchivos.png)  
+   - Se le pone un nombre a la carpeta y se acepta.  
+![alt text](images/sm-ComprimirArchivos2.png)  
+   - Se descarga la carpeta.  
+![alt text](images/sm-DescargaCarpetaRespaldo.png)
+   - Una vez descargada, se puede borrar la carpeta de respaldo de la carpeta del proyecto en plesk.  
+2. **Restaurar copia de seguridad**
+   - Para restaurar la copia de seguridad.  
+   - Se copia la carpeta de respaldo a la carpeta de wordpress y se extraen los archivos.  
+![alt text](images/sm-DescargaCarpetaRespaldo.png)
+
+## Copia de seguridad con el backup de Plesk  
+1. **Crear copia de seguridad:** 
+   - Se accede al proyecto de worpress en `Sitios web y dominios` del menu de plesk
+   - Se va a `Backup/restaurar`del menu del proyecto.  
+![alt text](images/bk-backupMenuWP.png)  
+   - Se hace clic en copiar y se hace la copia de seguridad. 
+![alt text](images/bk-BotonCopiar.png)  
+   - Se puede descargar la copia.  
+2. **Restaurar copia de seguridad**  
+   - Para restaurar la copia de seguridad se hace clic en restaurar.  
+![alt text](images/bk-Restaurar.png)  

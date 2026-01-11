@@ -78,3 +78,6 @@ Tambien se puede editar desde la consulta del Departamento.
 ### DELETE : BORRAR DEPARTAMENTO
 * Para borrar un departamentose elige Delete en el menu del departamento.   
 ![alt text](images/crud-DELETE.png)  
+
+**Con este plugin solo podrá tener acceso los usuarios con rol de administrador**
+El plugin permite elegir el rol pero Wordpress no le da permiso.
