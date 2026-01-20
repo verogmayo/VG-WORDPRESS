@@ -122,7 +122,8 @@ y al hacer clic en el campo del formulario se abre el menu de personalizacion de
 y aparece la tabla con la lista de los usuarios suscritos  
 ![alt text](images/wp6-TablaSuscripciónNewsletter2.png)  
 
-* Una vez que el proyecto esté alojado en Plesk, para poder enviar las newsletter y que no acaben en la bandeja de spam del usuario, habría que utilizar herramientas como MailerLite, Mailchimp o Brevo.   
+* Una vez que el proyecto esté alojado en Plesk, para poder enviar las newsletter y que no acaben en la bandeja de spam del usuario, habría que utilizar herramientas como MailerLite, Mailchimp o Brevo. 
+
 
 ## 7 - PERSONALIZAR LOS COMENTARIOS.
 * Para poder personalizar los comentarios se puede utilizar el plugin wpDiscuz.  
@@ -174,5 +175,7 @@ Se genera la Api, se copia.
 ![alt text](images/wp9-ConfiguracionWPMailSmtp5.png)  
 Y se pega en wordpress, en WP Mail SMTP-Ajustes y en la parte de abajo está la sección donde hay que pegar la clave.  
 ![alt text](images/wp9-ConfiguracionWPMailSmtp6.png)  
-
+* Para que los correos se envíen bien, la APIkey de Brevo tiene que ser la correcta y tiene que tener permiso para enviar correos. Para ellos en el menu de Brevo en la sección Remitentes, dominio, IP hay que configurar el DNS y registrar el dominio, elegir, autentica tu mismo el dominio(si se tiene los permisos necesarios para que poder configurar el DNS en alogamiento de explotación, en este caso PLESK)
+* Aparecera una pagía con el Codigo Brevo, el Registro DKIM1, el registro DKIM2, el Registro DMARC.
+* Se pasan los datos que se indican en Brevo al DNS de Plesk.
 	
