@@ -8,6 +8,7 @@
             <li><a href="EstructuraDeCarpetas.md">ESTRUCTURA DE CARPETAS</a></li>
             <li><a href="usoWordPress.md">USO DE WORDPRESS</a></li>
             <li><a href="GuiaPasoAPlesk.md">GUÍA DE PASO A PLESK</a></li>
+            <li><a href="CrearApiRestEnWordpress.md">GUÍA PARA HACER UNA API EN WORDPRESS</a></li>
         </ul>
     </div>
 
